@@ -5,7 +5,7 @@ import streamlit as st
 sns.set(style='dark')
 
 #Load dataframe
-merged_df = pd.read_csv("./main_data.csv", parse_dates=['Date'])
+merged_df = pd.read_csv("main_data.csv", parse_dates=['Date'])
 Changping = pd.read_csv("PRSA_Data_Changping_20130301-20170228.csv")
 Changping['Date'] = pd.to_datetime(Changping[['year', 'month', 'day']])
 Guanyuan = pd.read_csv("PRSA_Data_Guanyuan_20130301-20170228.csv")
